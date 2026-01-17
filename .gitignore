@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+*.cfg
+*.bin
+*.pyc
+
+
+include/*
+bin/*
+lib/*
+lib64/*
+share/*
+lib64
