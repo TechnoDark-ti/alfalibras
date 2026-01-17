@@ -26,10 +26,10 @@ if [ -d "$BUILD_DIR" ]; then
 fi
 
 # Integração do Ícone
-if [ -f "resources/assets/icon_high_res.png" ]; then
-    cp resources/assets/icon_high_res.png $APP_DIR/usr/share/icons/hicolor/256x256/apps/$APP_NAME.png
-    cp resources/assets/icon_high_res.png $APP_DIR/.DirIcon
-fi
+#if [ -f "resources/assets/icon_high_res.png" ]; then
+#    cp resources/assets/icon_high_res.png $APP_DIR/usr/share/icons/hicolor/256x256/apps/$APP_NAME.png
+#    cp resources/assets/icon_high_res.png $APP_DIR/.DirIcon
+#fi
 
 # Criação do Desktop Entry
 cat <<EOF > $APP_DIR/$APP_NAME.desktop
