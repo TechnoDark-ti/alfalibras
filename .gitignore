@@ -209,6 +209,10 @@ __marimo__/
 *.cfg
 *.bin
 *.pyc
+*.spec
+*.desktop
+*.AppImage
+*.exe
 
 
 include/*
@@ -217,3 +221,7 @@ lib/*
 lib64/*
 share/*
 lib64
+dist/
+
+
+MyLibrasApp.AppDir/
