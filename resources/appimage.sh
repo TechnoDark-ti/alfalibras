@@ -21,26 +21,26 @@ touch MyLibras.AppDir/MyLibrasApps.desktop
 touch MyLibras.AppDir/AppRun
 
 #inserindo os parâmetros
-echo "#!/bin/bash
-HERE="$(dirname "$(readlink -f "$0")")"
+echo "#!/bin/bash \
+HERE="$(dirname "$(readlink -f "$0")")" \
 
-export APPDIR="$HERE"
-export LD_LIBRARY_PATH="$HERE/usr/bin/mylibrasapp/_internal:$LD_LIBRARY_PATH"
+export APPDIR="$HERE" \
+export LD_LIBRARY_PATH="$HERE/usr/bin/mylibrasapp/_internal:$LD_LIBRARY_PATH" \
 
 exec "$HERE/usr/bin/mylibrasapp/mylibrasapp" "$@"
 " > MyLibrasApps.AppRun/AppRun
 
-echo "[Desktop Entry]
-Type=Application
-Name=AlfaLibras
-Exec=mylibrasapp
-Icon=MyLibrasApp
-Categories=Education;Accessibility;
-Terminal=false
+echo "[Desktop Entry] \
+Type=Application \
+Name=AlfaLibras \
+Exec=mylibrasapp \
+Icon=MyLibrasApp \
+Categories=Education;Accessibility; \
+Terminal=false \
 " > MyLibrasApp.AppDir/MyLibrasApp.desktop
 
 #para caso o teu linux fudido e capado não tenha o libfuse2
-sudo apt install libfuse2
+sudo apt install libfuse2 -y
 
 #baixando a ferramenta para empacotar o appimage
 wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
