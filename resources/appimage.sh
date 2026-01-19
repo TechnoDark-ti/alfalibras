@@ -42,13 +42,17 @@ Terminal=false \
 #para caso o teu linux fudido e capado não tenha o libfuse2
 sudo apt install libfuse2 -y
 
+#Você precisa dar permissão para o diretório do appimage para que ele funcione
+chmod +x MyLibrasApp.AppDir/dist/usr/bin/
+chmod +x MyLibrasApp.AppDir/AppRun
+
 #baixando a ferramenta para empacotar o appimage
 wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
 chmod +x appimagetool-x86_64.AppImage
 
 #Empacotando o software
 ./appimagetool-x86_64.AppImage MyLibrasApp.AppDir
-chmod 755 appimagetool-x86_64.AppImage
+chmod 755 AlfaLibras-x86_64.AppImage
 
 
 #Seja Feliz :)
