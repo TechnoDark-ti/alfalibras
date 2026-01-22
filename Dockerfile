@@ -33,9 +33,9 @@ RUN pip3 install --upgrade pip && \
 
 # 3. Copia todo o código fonte e a pasta de dados para dentro do contentor
 COPY . .
-#COPY data/ data/
+COPY data/ data/
 # Se tiveres a pasta resources, podes descomentar a linha abaixo:
-# COPY resources/ resources/
+COPY resources/ resources/
 
 # Expõe a porta que o Flet Web vai utilizar
 EXPOSE 8443
