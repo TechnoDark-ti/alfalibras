@@ -206,6 +206,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+
+#Arquivos desnecessários do diretório
 *.cfg
 *.bin
 *.pyc
@@ -214,7 +216,7 @@ __marimo__/
 *.AppImage
 *.exe
 
-
+#Diretórios criados pelo venv (não poluir o repositório)
 include/*
 bin/*
 lib/*
@@ -223,5 +225,5 @@ share/*
 lib64
 dist/
 
-
+#Diretório do Appimage criado no arquivo resources/appimage.sh
 MyLibrasApp.AppDir/
