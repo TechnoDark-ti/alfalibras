@@ -74,10 +74,10 @@ Este projeto está containerizado para facilitar a execução em qualquer ambien
 #### Opção 1: Baixar imagem pronta do Docker Hub
 Se você deseja apenas executar a aplicação:
 ~~~bash
-docker pull technodark/libras-tcc:latest
+docker pull technodark/libras-tcc:lasted
 ~~~
 ~~~bash
-docker run -p 8443:8443 --device=/dev/video0:/dev/video0 seu-usuario/libras-tcc:latest
+docker run -p 8443:8443 --device=/dev/video0:/dev/video0 technodark/libras-tcc:lasted
 ~~~
 
 #### Opção 2: Construir a imagem localmente
