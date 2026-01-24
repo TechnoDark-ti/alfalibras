@@ -167,18 +167,9 @@ python3 src/train_model.py
 │   └── config.py
 ├── share
 ├── resources
-│   ├── resources
-│   │   │       └── bin
-│   │   │       ├── TradutorLibras.desktop
-│   │   └── assets
-│   ├── PROJETO-LIBRAS.pod
 │   ├── install_toolchain.sh
 │   ├── install_libs.sh
 │   ├── generate_assets.py
-│   ├── docs_projeto
-│   │   ├── libs necessárias para o projeto.md
-│   │   └── Bem-vindo.md
-│   ├── appimagetool
 │   └── appimage.sh
 ├── README.md
 ├── LICENSE
